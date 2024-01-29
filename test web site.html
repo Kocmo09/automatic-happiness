@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tehke kiirtest</title> <!-- Изменен заголовок страницы -->
+    <link rel="icon" href="avatark.jfif" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <script>
+        function processAnswers(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+            var answer1 = document.querySelector('input[name="answer1"]:checked').value;
+            var answer2 = document.querySelector('input[name="answer2"]:checked').value;
+
+            // Здесь вы можете добавить свою логику обработки ответов
+            if (answer1 === 'A' && answer2 === 'A') {
+                alert('Вы миротворец.');
+            } else if (answer1 === 'A' && answer2 === 'B') {
+                alert('Вы любите творить на состязание.');
+            } else if (answer1 === 'A' && answer2 === 'C') {
+                alert('https://www.youtube.com/');
+            } else if (answer1 === 'B' && answer2 === 'A') {
+                alert('Вы любитель запариться.');
+            } else if (answer1 === 'B' && answer2 === 'B') {
+                alert('Вы мастер своего дела.');
+            } else if (answer1 === 'B' && answer2 === 'C') {
+                alert('Вы популярный человек на сервере.');
+            } else if (answer1 === 'C' && answer2 === 'A') {
+                alert('Вы воин.');
+            } else if (answer1 === 'C' && answer2 === 'B') {
+                alert('Вы, возможно, магушее.');
+            } else if (answer1 === 'C' && answer2 === 'C') {
+                alert('Среди вас нет лучше.');
+            } else {
+                alert('Ваш ответ не соответствует ни одной из комбинаций.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content-container" id="box1">
+        <form id="quiz" onsubmit="processAnswers(event)">
+            <div class="question">
+                <p>Вопрос 1 что любите в маинкрафт</p>
+                <input type="radio" name="answer1" value="A"> творить в креотиве<br>
+                <input type="radio" name="answer1" value="B"> работать с редстоуном<br>
+                <input type="radio" name="answer1" value="C"> сражатся<br>
+        
+                <p>Вопрос 2 вы с кем это делаете</p>
+                <input type="radio" name="answer2" value="A"> я это делаю один<br>
+                <input type="radio" name="answer2" value="B"> я это делаю с друзями<br>
+                <input type="radio" name="answer2" value="C"> я это делаю на сервере с людми<br>
+            </div>
+        
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</body>
+</html>
