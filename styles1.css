@@ -49,7 +49,7 @@ h1 {
     text-shadow: 2px 2px 4px #263d2d;
 }
 
-/* Add styles for the quiz form */
+
 form#quiz {
     margin-top: 20px;
     text-shadow: 2px 2px 4px #2d4936;
@@ -64,7 +64,7 @@ form#quiz {
     text-shadow: 2px 2px 4px #2d4936;
 }
 
-/* Add styling for the quiz submit button */
+
 input[type="submit"] {
     background-color: #3a654a;
     color: #fff;
