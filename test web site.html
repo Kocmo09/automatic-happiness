@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tehke kiirtest</title> <!-- Изменен заголовок страницы -->
+    <title>Tehke kiirtest</title> 
     <link rel="icon" href="avatark.jfif" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles1.css">
     <script>
         function processAnswers(event) {
-            event.preventDefault(); // Предотвращаем отправку формы
+            event.preventDefault(); 
             var answer1 = document.querySelector('input[name="answer1"]:checked').value;
             var answer2 = document.querySelector('input[name="answer2"]:checked').value;
 
-            // Здесь вы можете добавить свою логику обработки ответов
             if (answer1 === 'A' && answer2 === 'A') {
                 alert('Вы миротворец.');
             } else if (answer1 === 'A' && answer2 === 'B') {
