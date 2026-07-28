@@ -56,7 +56,7 @@ form#quiz {
 }
 
 .question-container {
-    background-color: #24442e; /* Зеленый цвет для контейнера вопросов */
+    background-color: #24442e;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
